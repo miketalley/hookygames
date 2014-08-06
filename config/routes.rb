@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: '#publics/index'
+
   resources :publics
 
   # The priority is based upon order of creation: first created -> highest priority.
