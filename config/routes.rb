@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: '#publics/index'
+  root to: 'publics#index'
 
   resources :publics
 
