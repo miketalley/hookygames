@@ -61,6 +61,10 @@ class PublicsController < ApplicationController
     end
   end
 
+  def hardware
+
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_public

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get '/hardware' => 'publics#hardware'
+  resources :games
+
   resources :posts
 
   root to: 'publics#index'

@@ -6,6 +6,36 @@ body {
   background-color: black;
 }
 
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #0099FF;
+  text-shadow: 0px 0px 20px #0099FF;
+}
+
+a:active {
+  text-decoration: none;
+  color: #0099FF;
+  background-color: white;
+}
+
+ul {
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+ul a {
+  font-weight: bold;
+}
+
 #all {
   background-color: black;
 }
@@ -15,8 +45,8 @@ body {
   color: #0099FF;
   text-shadow: 0px 0px 7px #000000;
   position: fixed;
-  margin-top: 70px;
-  margin-left: 80px;
+  margin-top: 35px;
+  margin-left: 35px;
   font-family: 'Orbitron', sans-serif;
   z-index: 1;
 }
@@ -25,23 +55,24 @@ body {
   font-size: 75px;
   color: black;
   position: fixed;
-  margin-top: 70px;
-  margin-left: 375px;
+  margin-top: 35px;
+  margin-left: 325px;
   font-family: 'Orbitron', sans-serif;
   z-index: 1;
 }
 
 .menu {
   background-color: white;
-  width: 90%;
+  width: 97%;
   position: fixed;
   height: 40px;
   box-shadow: 0px 0px 100px #ffffff;
-  margin-top: 125px;
-  margin-left: 60px;
+  margin-top: 120px;
+  margin-left: 20px;
   border-radius: 20px;
   z-index: 2;
   vertical-align: middle;
+  line-height: 18px;
 }
 
 .menu-links {
@@ -60,16 +91,40 @@ body {
   padding-right: 30px;
 }
 
-.content {
+.sidebar {
+  background-color: black;
+  height: 76%;
+  width: 15%;
+  position: fixed;
+  margin-left: 35px;
+  margin-top: 185px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 120px #0099FF;
+  z-index: 0
+}
+
+.content-bg {
   background-color: #0099FF;
-  width: 80%;
+  width: 90%;
   position: fixed;
   height: 90%;
   box-shadow: 0px 0px 120px #005C99;
-  margin-left: 363px;
-  margin-top: 35px;
+  margin-left: 317px;
+  margin-top: 20px;
   z-index: 0;
+  border-radius: 10px;
+}
 
+.content {
+  background-color: black;
+  width: 95%;
+  height: 85%;
+  z-index: 3;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 120px #005C99;
 }
 
 .menu.ng-enter {
@@ -79,11 +134,18 @@ body {
   animation: bounceInRight 3s;
 }
 
-.content.ng-enter {
+.content-bg.ng-enter {
   -webkit-animation: lightSpeedIn 2s;
   -moz-animation: lightSpeedIn 2s;
   -ms-animation: lightSpeedIn 2s;
   animation: lightSpeedIn 2s;
+}
+
+.sidebar.ng-enter {
+  -webkit-animation: fadeIn 12s;
+  -moz-animation: fadeIn 12s;
+  -ms-animation: fadeIn 12s;
+  animation: fadeIn 12s;
 }
 
 .button {
@@ -111,6 +173,6 @@ body {
 .search {
   position: relative;
   margin-left: 835px;
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
